@@ -5,7 +5,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import pl.excercise.jpa.entity.AddressEntity;
-import pl.excercise.jpa.model.projections.AddressAndTotalPrice;
 import pl.excercise.jpa.model.projections.dtos.AddressAndTotalPriceDTO;
 import pl.excercise.jpa.model.projections.dtos.AddressCountryStreetZipCodeDTO;
 import pl.excercise.jpa.model.projections.dtos.TotalPriceByCityDTO;

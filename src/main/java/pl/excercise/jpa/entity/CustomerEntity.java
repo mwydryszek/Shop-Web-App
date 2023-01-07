@@ -35,4 +35,5 @@ public class CustomerEntity {
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.REMOVE)
     private List<CustomerOrderEntity> orders;
+    
 }
