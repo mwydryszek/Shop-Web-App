@@ -1,6 +1,9 @@
 package pl.excercise.jpa.service;
 
+import org.springframework.data.repository.query.Param;
+import pl.excercise.jpa.entity.CustomerOrderEntity;
 import pl.excercise.jpa.model.AddressDTO;
+import pl.excercise.jpa.model.CustomerOrderDTO;
 import pl.excercise.jpa.model.projections.AddressAndTotalPrice;
 import pl.excercise.jpa.model.projections.dtos.AddressAndTotalPriceDTO;
 import pl.excercise.jpa.model.projections.dtos.AddressCountryStreetZipCodeDTO;
@@ -21,5 +24,4 @@ public interface AddressService {
     List<AddressAndTotalPriceDTO> getAddressEntitiesByTotalPriceBiggerThanParam(BigDecimal price);
 
     List<TotalPriceByCityDTO> getTotalPriceByCity(String city);
-
 }

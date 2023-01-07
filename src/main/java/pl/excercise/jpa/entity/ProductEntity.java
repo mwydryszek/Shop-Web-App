@@ -30,9 +30,9 @@ public class ProductEntity {
     private Integer availableQuantity;
 
     @ManyToMany
-    @JoinTable(name = "customer_order_product",
-            joinColumns = @JoinColumn(name = "product_id"),
-            inverseJoinColumns = @JoinColumn(name = "customer_order_id"))
+    @JoinTable(name = "product_customer_order",
+            joinColumns = @JoinColumn(name = "product_id", referencedColumnName="id"),
+            inverseJoinColumns = @JoinColumn(name = "customer_order_id", referencedColumnName="id"))
     private Set<CustomerOrderEntity> orders = new LinkedHashSet<>();
 
 }
