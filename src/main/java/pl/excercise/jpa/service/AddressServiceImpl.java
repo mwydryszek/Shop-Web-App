@@ -5,7 +5,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.excercise.jpa.model.AddressDTO;
 import pl.excercise.jpa.model.AddressMapper;
-import pl.excercise.jpa.model.projections.AddressAndTotalPrice;
 import pl.excercise.jpa.model.projections.dtos.AddressAndTotalPriceDTO;
 import pl.excercise.jpa.model.projections.dtos.AddressCountryStreetZipCodeDTO;
 import pl.excercise.jpa.model.projections.dtos.TotalPriceByCityDTO;

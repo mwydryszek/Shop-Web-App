@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pl.excercise.jpa.model.AddressDTO;
-import pl.excercise.jpa.model.projections.AddressAndTotalPrice;
 import pl.excercise.jpa.model.projections.dtos.AddressAndTotalPriceDTO;
 import pl.excercise.jpa.model.projections.dtos.AddressCountryStreetZipCodeDTO;
 import pl.excercise.jpa.model.projections.dtos.TotalPriceByCityDTO;

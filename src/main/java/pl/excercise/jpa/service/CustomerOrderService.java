@@ -12,7 +12,6 @@ public interface CustomerOrderService {
     List<CustomerOrderDTO> getCustomerOrderEntityByTotalPriceBetweenTwoArgs(BigDecimal firstArg, BigDecimal secArg);
     List<CustomerNameSurnameTotalPriceDTO> getCustomerSumTotalPrice();
     List<CustomerOrderDTO> getCustomerOrderEntityByProductName(String name);
-
     List<CustomerOrderDTO> getCustomerOrderEntityWithoutProducts();
 
 }

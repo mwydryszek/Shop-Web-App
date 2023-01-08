@@ -12,6 +12,7 @@ import pl.excercise.jpa.model.ProductMapper;
 import pl.excercise.jpa.repository.ProductRepository;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -19,5 +20,7 @@ import java.util.stream.Collectors;
 public class ProductServiceImpl implements ProductService{
 
     private final ProductRepository productRepository;
+    private final ProductMapper productMapper;
+
 
 }

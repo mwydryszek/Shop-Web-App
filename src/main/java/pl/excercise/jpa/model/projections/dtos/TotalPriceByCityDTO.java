@@ -1,19 +1,13 @@
 package pl.excercise.jpa.model.projections.dtos;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@Builder
+@Value
 public class TotalPriceByCityDTO {
 
-    private String city;
-    private BigDecimal totalPrice;
+    String city;
+    BigDecimal totalPrice;
 
 }

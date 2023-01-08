@@ -1,19 +1,13 @@
 package pl.excercise.jpa.model.projections.dtos;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@Builder
+@Value
 public class AddressCountryStreetZipCodeDTO {
 
-    private String country;
-    private String street;
-    private String zipCode;
+    String country;
+    String street;
+    String zipCode;
 
 }
