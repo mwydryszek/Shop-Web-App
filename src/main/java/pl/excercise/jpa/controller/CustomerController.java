@@ -27,8 +27,8 @@ public class CustomerController {
 
 
     @GetMapping("/get-Customer-Entites-Full-Name")
-    public List<CustomerFullName> getAllByOrderBySurnameAsc() {
-        return customerService.getAllByOrderBySurnameAsc();
+    public List<CustomerFullName> getCustomerEntityFullNames() {
+        return customerService.getCustomerEntityFullNames();
     }
 
 

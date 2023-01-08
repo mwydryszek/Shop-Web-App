@@ -11,7 +11,7 @@ import java.util.List;
 public interface CustomerService {
     List<CustomerDTO> getCustomerEntitiesByAddress_CountryOrderByBirthDateAsc(String country);
 
-    List<CustomerFullName> getAllByOrderBySurnameAsc();
+    List<CustomerFullName> getCustomerEntityFullNames();
 
     List<CustomerDTO> getCustomerYoungerThanDateParam(LocalDate date);
 

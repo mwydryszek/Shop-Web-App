@@ -21,8 +21,9 @@ public interface CustomerRepository extends JpaRepository<CustomerEntity, Long> 
 	List<CustomerEntity> findCustomerEntitiesByAddress_CountryOrderByBirthDateAsc(String country);
 
 	 //* 2. Stwórz metodę, która wyciągnie projekcje zawierającą jedno pole fullName, będące połączeniem firstName + surname.
-	
-	List<CustomerFullName> findAllByOrderBySurnameAsc();
+
+	@Query("SELECT c FROM CustomerEntity c")
+	List<CustomerFullName> getCustomerEntityFullNames();
 
 	 //* 3. Stwórz metodę, która będzie wyciągała encje Customer dla birthDate większe niż podana data i niepustego firstName.
 

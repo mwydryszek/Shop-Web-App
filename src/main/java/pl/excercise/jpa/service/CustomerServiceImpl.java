@@ -27,8 +27,8 @@ public class CustomerServiceImpl implements CustomerService{
     }
 
     @Override
-    public List<CustomerFullName> getAllByOrderBySurnameAsc() {
-        return customerRepository.findAllByOrderBySurnameAsc();
+    public List<CustomerFullName> getCustomerEntityFullNames() {
+        return customerRepository.getCustomerEntityFullNames();
     }
 
     @Override
